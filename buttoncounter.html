@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+    <title>practicing javascript</title>
+</head>
+<body>
+
+    <p>Practicing with event listeners</p>
+
+    <!--define a button with an id-->
+    <button id='btnCounter'>Click to count</button>
+
+    <p id='result'>result will display here</p> <!--display result-->
+
+
+    <script>
+
+let btnCounter = document.getElementById('btnCounter')//assign button to a variable to give it onclick listener
+let counter = 0
+btnCounter.addEventListener('click', function(){
+    counter++
+   
+    
+    document.getElementById('result').innerHTML= counter //store number of counts in result
+    if(counter > 10 ){
+document.getElementById('result').innerHTML = "You have reached maximum counts. Maximum is 10"
+    
+    }
+
+}
+
+)
+
+</script>
+
+
+    </body>
+    <html
